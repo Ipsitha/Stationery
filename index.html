@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Create a header tag and add a logo image inside it -->
+    <header>
+        <img id="logo" src="C:\Users\USER\Downloads\Screenshot_2022-01-22_154006.PNG-removebg-preview.png" alt="">
+    </header>
+    <!-- Create a container holding the heading, paragraph -->
+    <div class="top container ">
+        <h1>Welcome to Stationery!</h1><br>
+        <p>Select your supplies, confirm your mobile number <br> and get them delivered in 2 hrs
+        </p>
+        <br>
+        <div class="button store"> <a href="#table"> <b>What’s in supplies?</b> </a> </div>
+    </div>
+    <div class="table container">
+        <h2>Here’s What Is In Supplies Today</h2>
+        <!-- Iteration 1: Create a table to display the items avaliable in the Groove store -->
+        <table id="table">
+            <tr>
+                <th>SELECT</th>
+                <th>ITEM</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="checkbox"></td>
+                <td><img src="https://m.media-amazon.com/images/I/811lm+k1ckL._SL1500_.jpg" alt=""></td>
+                <td>Pencils</td>
+                <td>Rs. 10 per pencil</td>
+                <td><input type="number" id="quantity"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://5.imimg.com/data5/LT/ZE/NX/SELLER-80498554/erasers-500x500.jpg" alt=""></td>
+                <td>Erasers</td>
+                <td>Rs.5 per eraser</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://5.imimg.com/data5/HW/PL/LH/SELLER-9947312/camlin-pencil-sharpeners-500x500.jpg" alt=""></td>
+                <td>Sharpners</td>
+                <td>Rs. 7 per sharpner</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://5.imimg.com/data5/WF/TU/MY-44697526/camlin-scholar-geometry-box-500x500.jpg" alt=""></td>
+                <td>Geometry set</td>
+                <td>Rs. 20 per box</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://m.media-amazon.com/images/I/319A9gL2kbL._SY450_.jpg" alt=""></td>
+                <td>Scissors</td>
+                <td>Rs. 90 per scissor</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://bteasy.com/image/cache/catalog/02_Products/Books-Stationery/Sundaram/1904-500x500.png" alt=""></td>
+                <td>Origami papers</td>
+                <td>Rs. 100 per packet</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://m.media-amazon.com/images/I/51iEJAZ-ngL._SL1000_.jpg" alt=""></td>
+                <td>Glue</td>
+                <td>Rs. 75 per bottle</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://helloaugust.in/wp-content/uploads/2020/04/camel-oil-pastel-15s.jpg" alt=""></td>
+                <td>Oil pastels</td>
+                <td>Rs. 50 per box(+ 1 pencil free)</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://m.media-amazon.com/images/I/815M6utnCVL._AC_SL1500_.jpg" alt=""></td>
+                <td>Paint brushes</td>
+                <td>Rs. 80 per packet</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://m.media-amazon.com/images/I/71D28YGGRxL._SL1500_.jpg" alt=""></td>
+                <td>Water colours</td>
+                <td>Rs. 50 per palette( + 1 paint brush free)</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+        </table>
+        <br><br>
+        <p>One last step to place your order. <br> Enter your email and mobile number and you are done!</p>
+        <br>
+        <input type="text" id="email" placeholder="Enter your email">
+        <br> <br>
+        <input type="text" id="mobile" placeholder="Enter your mobile number">
+        <br><br>
+        <div class="button" onclick="buy" id="buy-now"> <b>Buy Now</b> </div>
+        <h3 id="thanks">Thank You For Shopping With Us.</h3>
+        <br><br>
+        <footer>
+            <p>Made with ❤ by ProGrad Junior, Ipsitha</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById("buy-now").onclick = (evt) => {
+            document.getElementById("thanks").style.display = "inherit";
+            document.getElementById("buy-now").style.display = "none";
+        }
+    </script>
+</body>
+</html>
